@@ -1,0 +1,135 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat,Philosopher,Roboto;
+    
+}
+.section-bg-1{
+	background-image: url(img/background.jpg);
+}
+
+
+/*========================   Nav manu ==================*/
+
+.section-padding {
+  position: relative;
+  background-size: cover;
+  background-position: center top;
+  padding: 100px 0;
+}
+
+.price-boxces {
+  box-shadow: 0 0 20px #555;
+  overflow: hidden;
+}
+.single-pricing-box {
+  position: relative;
+	z-index: 1;
+  float: left;
+  width: 33.333333%;
+}
+.single-pricing-box::after{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height:100%;
+	width: 1px;
+	content: "";
+	background: #333;
+	opacity: .2;
+}
+.single-pricing-box:last-child {
+  border: none;
+}
+.pricing-box-img {
+  display: table;
+  height: 175px;
+  width: 100%;
+}
+.pricing-box-img img {
+  max-width: 180px;
+  max-height: 165px;
+}
+.pricing-box-warp {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  text-align: center;
+}
+.price-box-iner {
+  background: #fff;
+  padding: 25px;
+  color: #3c76c0;
+  text-align: center;
+}
+.price-box-iner h2 {
+  font-weight: 700;
+  color: #3c76e0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.pricing-content span {
+  display: inline-block;
+  position: relative;
+  color: #d25529;
+  font-weight: 800;
+  font-size: 40px;
+}
+.pricing-content span::before {
+  content: "$";
+  font-size: 24px;
+  position: absolute;
+  left: -22px;
+  top: -2px;
+  font-weight: 400;
+}
+.pricing-content span::after {
+  content: "/mo";
+  font-size: 23px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.price-box-iner h3 {
+  text-align: center;
+  padding-left: 17px;
+}
+.price-box-iner ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 23px;
+  line-height: 29px;
+  font-size: 15px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.box-btn {
+  background: #3c76c0;
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: .3s;
+}
+.box-btn:hover {
+  background: #333;
+  color: #fff;
+}
+.box-btn.active {
+  background: #d25529;
+	transition: .3s;
+}
+.box-btn.active:hover{
+	background: #333;
+	color: #fff;
+}
+.section-padding.section-bg-1 {
+	background-attachment: fixed;
+}
+
+
+
